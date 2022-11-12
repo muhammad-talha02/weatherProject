@@ -1,0 +1,95 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.logo-img{
+    width: 58px;
+}
+#main-left p{
+    margin: 0;
+}
+.weather-btn{
+    box-shadow: 0px 0px 7px 2px #517389;
+    border-radius: 24px;
+    padding: 5px 14px;
+}
+.logo-img{
+    animation: mov 2s infinite linear;
+}
+@keyframes mov {
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+}
+
+.result_temp{
+    border-radius: 5px;
+    background-color: #517389;
+
+}
+.top_Layer p{
+    font-size: 22px;
+}
+.middle_layer p{
+    font-size: 2.5rem;
+}
+#C_name{
+    background-color: #517389;
+    color: #fff;
+}
+#C_name::placeholder{
+    color: rgb(173, 171, 171);
+}
+#C_name:focus{
+    /* outline: none;
+    border: none; */
+    box-shadow: none;
+}
+.hide{
+    visibility: hidden;
+}
+.main_layer{
+    position: relative;
+}
+.loader {
+    position: absolute;
+    top: 38%;
+    left: 42%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
